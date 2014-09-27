@@ -1,12 +1,11 @@
-apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 20
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "tw.yes.androidskilltree"
+        applicationId "tw.yes.selectorDrawableYes"
         minSdkVersion 9
         targetSdkVersion 20
         versionCode 1
@@ -20,20 +19,8 @@ android {
     }
 }
 
-apt {
-    arguments {
-        androidManifestFile variant.processResources.manifestFile
-        resourcePackageName "tw.yes.androidskilltree"
-    }
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    apt "org.androidannotations:androidannotations:3.1"
-    compile 'org.androidannotations:androidannotations-api:3.1'
     compile 'com.android.support:appcompat-v7:20.0.0'
     compile 'com.android.support:support-v4:20.0.0'
-    compile 'com.google.android.gms:play-services:5.2.08'
-    compile project(':animationDrawableYes')
-    compile project(':SelectorDrawableYes')
 }

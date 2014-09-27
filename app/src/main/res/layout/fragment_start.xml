@@ -5,19 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's play Drawable~!"
+        android:textSize="36sp" />
+
     <Button
         android:id="@+id/animationDrawableButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Animation\nDrawable"
+        android:layout_marginTop="16dp"
+        android:text="Animation"
         android:textColor="#ffffff"
         android:background="@drawable/shape_circle_black" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Layer\nDrawable"
-        android:textColor="#ffffff"
-        android:background="@drawable/shape_circle_black" />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/layerDrawableButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="LayerList"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_circle_black" />
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:id="@+id/selectorDrawableButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Selector"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_circle_black" />
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tbd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="TBD"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_circle_black" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

@@ -5,6 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
+import tw.yes.animationDrawableYes.AnimationDrawableYesFragment;
+import tw.yes.selectorDrawableYes.SelectorDrawableYesFragment;
+
 @EActivity(R.layout.activity_start)
 public class StartActivity extends ActionBarActivity implements StartFragment.GgListener {
 
@@ -15,6 +18,13 @@ public class StartActivity extends ActionBarActivity implements StartFragment.Gg
 
     @Override
     public void fire(String name) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AnimationDrawableFragment_()).addToBackStack("").commit();
+        if (name.equals("animationlist")) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AnimationDrawableYesFragment()).addToBackStack("").commit();
+        } else if (name.equals("layerlist")) {
+        } else if (name.equals("selector")) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SelectorDrawableYesFragment()).addToBackStack("").commit();
+        } else {
+
+        }
     }
 }
