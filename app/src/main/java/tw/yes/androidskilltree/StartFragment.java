@@ -23,6 +23,21 @@ public class StartFragment extends Fragment {
 
     @Click(R.id.animationDrawableButton)
     void animationDrawableButtonClicked() {
-        ggListener.fire("gg");
+        ggListener.fire("animationlist");
+    }
+
+    @Click(R.id.layerDrawableButton)
+    void layerDrawableButtonClicked() {
+        ggListener.fire("layerlist");
+    }
+
+    @Click(R.id.selectorDrawableButton)
+    void selectorDrawableButtonClicked(){
+        ggListener.fire("selector");
+    }
+
+    @Click(R.id.button_tbd)
+    void buttonTBDClicked(){
+        ggListener.fire("tbd");
     }
 }
