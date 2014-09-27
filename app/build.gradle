@@ -37,4 +37,5 @@ dependencies {
     compile project(':animationDrawableYes')
     compile project(':SelectorDrawableYes')
     compile project(':LayerListDrawableYes')
+    compile project(':TBDModule')
 }

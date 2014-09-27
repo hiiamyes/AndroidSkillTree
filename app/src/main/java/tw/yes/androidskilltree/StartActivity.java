@@ -7,6 +7,7 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 import tw.yes.animationDrawableYes.AnimationDrawableYesFragment;
+import tw.yes.haha.TestFragment;
 import tw.yes.layerListDrawableYes.LayerListDrawableYesFragment;
 import tw.yes.selectorDrawableYes.SelectorDrawableYesFragment;
 
@@ -28,6 +29,7 @@ public class StartActivity extends ActionBarActivity implements StartFragment.Gg
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SelectorDrawableYesFragment()).addToBackStack("").commit();
         } else if (name.equals("tbd")) {
             Toast.makeText(this, "NOTHING~~", Toast.LENGTH_SHORT).show();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TestFragment()).addToBackStack("").commit();
         }
     }
 }
