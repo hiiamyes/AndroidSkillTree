@@ -35,4 +35,9 @@ public class StartFragment extends Fragment {
     void selectorDrawableButtonClicked(){
         ggListener.fire("selector");
     }
+
+    @Click(R.id.button_tbd)
+    void buttonTBDClicked(){
+        ggListener.fire("tbd");
+    }
 }

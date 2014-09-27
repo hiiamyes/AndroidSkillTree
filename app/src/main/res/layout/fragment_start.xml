@@ -30,8 +30,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:text="LayerList"
-            android:textColor="#ffffff"
-            android:background="@drawable/shape_circle_black" />
+            android:background="@drawable/shape_circle_yellow" />
 
         <Button
             android:layout_marginLeft="16dp"
@@ -40,16 +39,15 @@
             android:layout_height="100dp"
             android:text="Selector"
             android:textColor="#ffffff"
-            android:background="@drawable/shape_circle_black" />
+            android:background="@drawable/shape_circle_orange" />
 
         <Button
             android:layout_marginLeft="16dp"
-            android:id="@+id/tbd"
+            android:id="@+id/button_tbd"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:text="TBD"
-            android:textColor="#ffffff"
-            android:background="@drawable/shape_circle_black" />
+            android:background="@drawable/shape_circle_blue" />
 
     </LinearLayout>
 

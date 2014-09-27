@@ -36,4 +36,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:5.2.08'
     compile project(':animationDrawableYes')
     compile project(':SelectorDrawableYes')
+    compile project(':LayerListDrawableYes')
 }

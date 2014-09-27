@@ -1,1 +1,1 @@
-include ':app', ':animationDrawableYes', ':SelectorDrawableYes'
+include ':app', ':animationDrawableYes', ':SelectorDrawableYes', ':LayerListDrawableYes'
